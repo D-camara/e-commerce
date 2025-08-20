@@ -1,0 +1,267 @@
+/* Amazon Design System Colors */
+:root {
+    --forest-dark: #1a4d3a;
+    --forest: #2d6a4f;
+    --forest-light: #52b788;
+    --river: #277da1;
+    --earth: #8b5a3c;
+    --golden: #f7b801;
+    --natural: #f8f3e8;
+}
+
+/* Custom Bootstrap Colors */
+.bg-forest {
+    background-color: var(--forest-dark) !important;
+}
+
+.bg-forest-gradient {
+    background: linear-gradient(135deg, var(--forest-dark), var(--forest)) !important;
+}
+
+.text-forest {
+    color: var(--forest) !important;
+}
+
+.text-golden {
+    color: var(--golden) !important;
+}
+
+.text-river {
+    color: var(--river) !important;
+}
+
+.text-earth {
+    color: var(--earth) !important;
+}
+
+.bg-natural {
+    background-color: var(--natural) !important;
+}
+
+/* Button Styles */
+.btn-golden {
+    background-color: var(--golden);
+    border-color: var(--golden);
+    color: var(--forest-dark);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-golden:hover {
+    background-color: #e6a600;
+    border-color: #e6a600;
+    color: var(--forest-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(247, 184, 1, 0.3);
+}
+
+.btn-forest {
+    background-color: var(--forest);
+    border-color: var(--forest);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-forest:hover {
+    background-color: var(--forest-dark);
+    border-color: var(--forest-dark);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link.hover-golden:hover {
+    color: var(--golden) !important;
+}
+
+/* Hero Carousel */
+.carousel-inner {
+    height: 70vh;
+}
+
+.hero-slide {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-slide-1 {
+    background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2092&q=80');
+}
+
+.hero-slide-2 {
+    background-image: url('https://images.unsplash.com/photo-1587837073080-448bc6147013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+}
+
+.hero-slide-3 {
+    background-image: url('https://images.unsplash.com/photo-1569163139394-de4e4f43e4e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 77, 58, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+/* Product Cards */
+.product-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-image {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.badge-category {
+    background-color: var(--natural) !important;
+    color: var(--forest) !important;
+    font-weight: 600;
+}
+
+/* Category Filter */
+.category-badge {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.category-badge:hover {
+    transform: translateY(-2px);
+}
+
+.category-badge.active {
+    background-color: var(--forest) !important;
+    color: white !important;
+    border-color: var(--forest) !important;
+}
+
+.category-badge:not(.active) {
+    background-color: var(--natural) !important;
+    color: var(--forest) !important;
+}
+
+.category-badge:not(.active):hover {
+    background-color: #e6dcc8 !important;
+}
+
+/* Modal Customization */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--natural);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--natural);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-slide {
+        height: 50vh;
+    }
+    
+    .carousel-inner {
+        height: 50vh;
+    }
+    
+    .display-2 {
+        font-size: 2.5rem;
+    }
+    
+    .display-6 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--natural);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--forest);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--forest-dark);
+}
