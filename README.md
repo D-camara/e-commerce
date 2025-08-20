@@ -22,11 +22,3 @@ Exemplo com Python (opcional):
 python -m http.server 8000
 ```
 Depois acesse: http://localhost:8000/
-
-## Próximos Passos Sugeridos
-- Adicionar imagens e descrições de produtos.
-- Incluir um carrinho (JavaScript) e fluxo de checkout.
-- Responsividade aprimorada (media queries adicionais).
-
----
-Primeiro commit inicial.
